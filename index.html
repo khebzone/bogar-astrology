@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maharishi Parthibangovindharaj | Bogar Astrology Research Centre Chennai</title>
+  <meta name="description" content="Divine Vedic Astrology, Numerology, Gemology & Vastu consultations by Maharishi Parthibangovindharaj (M.A., M.Phil.). Bogar Astrology Research Centre, Chennai. Online & Offline consultations in Tamil & English.">
+  <meta name="keywords" content="Astrologer Chennai, Bogar Astrology, Maharishi Parthibangovindharaj, Vedic Astrology, Numerology, Gemology, Vastu Shastra, Marriage Porutham, Tamil Astrology">
+  
+  <!-- Favicon / Icon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🕉️</text></svg>">
+  
+  <!-- Google Fonts: Cinzel Decorative, Cormorant Garamond, Outfit, Noto Serif Tamil -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Noto+Serif+Tamil:wght@400;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="lang-en">
+  <!-- Interactive Cosmic Background Canvas -->
+  <canvas id="cosmic-canvas"></canvas>
+
+  <!-- Golden Aura Ambient Glows -->
+  <div class="divine-glow glow-top"></div>
+  <div class="divine-glow glow-center"></div>
+  <div class="divine-glow glow-bottom"></div>
+
+  <!-- Audio Atmosphere & Controls Bar -->
+  <div class="divine-audio-bar">
+    <button id="sound-toggle-btn" class="audio-chip" title="Toggle Sacred Om Cosmic Frequency">
+      <span class="sound-wave-bars">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </span>
+      <span class="audio-label" data-en="Sacred Sound: Off" data-ta="புனித ஓம் ஒலி: அணை">Sacred Sound: Off</span>
+    </button>
+
+    <div class="lang-selector">
+      <button class="lang-btn active" data-lang="en">English</button>
+      <span class="lang-sep">|</span>
+      <button class="lang-btn" data-lang="ta">தமிழ்</button>
+    </div>
+  </div>
+
+  <!-- Main Regal Navigation -->
+  <header class="regal-header">
+    <div class="header-inner container">
+      <div class="brand-crest">
+        <div class="sacred-symbol-glow">
+          <span class="om-mark">🕉️</span>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name" data-en="BOGAR ASTROLOGY" data-ta="போகர் ஜோதிடம்">BOGAR ASTROLOGY</span>
+          <span class="brand-sub" data-en="Research Centre • Chennai" data-ta="ஆராய்ச்சி மையம் • சென்னை">Research Centre • Chennai</span>
+        </div>
+      </div>
+
+      <nav class="nav-links">
+        <a href="#about" class="nav-item" data-en="About Maharishi" data-ta="மகரிஷி பற்றி">About Maharishi</a>
+        <a href="#services" class="nav-item" data-en="Services" data-ta="சேவைகள்">Services</a>
+        <a href="#calculator" class="nav-item" data-en="Numerology Calculator" data-ta="எண் கணித கணிப்பான்">Numerology</a>
+        <a href="#zodiac" class="nav-item" data-en="Zodiac Chakra" data-ta="ராசி சக்கரம்">Zodiac Chakra</a>
+        <a href="#booking" class="nav-item highlight" data-en="Book Consultation" data-ta="முன்பதிவு செய்ய">Book Consultation</a>
+      </nav>
+
+      <div class="header-cta">
+        <a href="https://wa.me/919698016673?text=Namaste%20Maharishi%20Ji%2C%20I%20would%20like%20to%20consult%20regarding%20my%20Horoscope." target="_blank" rel="noopener noreferrer" class="gold-pill-btn pulse-glow">
+          <i data-lucide="message-circle"></i>
+          <span>+91 9698016673</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section with Celestial Sanctum -->
+  <section class="hero-section" id="hero">
+    <div class="ornamental-frame container">
+      <!-- Traditional Corner Motifs -->
+      <div class="corner-motif corner-tl"></div>
+      <div class="corner-motif corner-tr"></div>
+      <div class="corner-motif corner-bl"></div>
+      <div class="corner-motif corner-br"></div>
+
+      <!-- Sacred Top Banner -->
+      <div class="divine-crest-banner">
+        <div class="mantra-line">॥ ஓம் ஸ்ரீ போகர் சித்தரே நமஹ ॥ ஓம் சரவணபவ ॥ ஸ்ரீ மகா கணபதியே நமஹ ॥</div>
+        <div class="sub-institution" data-en="BOGAR ASTROLOGY RESEARCH CENTRE, CHENNAI" data-ta="போகர் ஜோதிட ஆராய்ச்சி மையம், சென்னை">
+          BOGAR ASTROLOGY RESEARCH CENTRE, CHENNAI
+        </div>
+      </div>
+
+      <!-- Master Title -->
+      <div class="hero-title-group">
+        <div class="title-eyebrow" data-en="REVERED ASTRO CONSULTANT & VEDIC SCHOLAR" data-ta="மதிப்பிற்குரிய ஜோதிட ஆலோசகர் & வேத அறிஞர்">
+          REVERED ASTRO CONSULTANT & VEDIC SCHOLAR
+        </div>
+        <h1 class="master-name gold-shimmer">
+          MAHARISHI PARTHIBANGOVINDHARAJ
+        </h1>
+        <div class="degrees-badge">
+          <span>M.A., M.Phil.</span>
+          <span class="sep">•</span>
+          <span data-en="Astro Consultant" data-ta="ஜோதிட ஆலோசகர்">Astro Consultant</span>
+          <span class="sep">•</span>
+          <span data-en="25+ Years Divine Wisdom" data-ta="25+ ஆண்டுகள் அனுபவம்">25+ Years Divine Wisdom</span>
+        </div>
+      </div>
+
+      <!-- Hero Visual Sanctum: Lord Murugan, Sacred Rotating Zodiac Chakra, Lord Ganesha -->
+      <div class="divine-sanctum-visual">
+        <!-- Murugan Wing -->
+        <div class="deity-card deity-murugan" data-tilt>
+          <div class="deity-aura"></div>
+          <div class="deity-illustration">
+            <!-- Stylized Gold Deity SVG / Artwork -->
+            <div class="gold-statue-container">
+              <svg class="deity-svg" viewBox="0 0 200 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <radialGradient id="goldGlowM" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%" stop-color="#fff4cc" />
+                    <stop offset="45%" stop-color="#dfa84a" />
+                    <stop offset="85%" stop-color="#7a4b08" />
+                    <stop offset="100%" stop-color="#2a1600" />
+                  </radialGradient>
+                  <filter id="divineAuraFilter">
+                    <feGaussianBlur stdDeviation="3" result="blur" />
+                    <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                  </filter>
+                </defs>
+                <!-- Halo -->
+                <circle cx="100" cy="80" r="48" fill="url(#goldGlowM)" opacity="0.35" filter="url(#divineAuraFilter)" />
+                <circle cx="100" cy="80" r="42" stroke="#e6be6d" stroke-width="1.5" stroke-dasharray="4 3" />
+                <!-- Sacred Vel -->
+                <path d="M50 20 L58 45 L54 190 L46 190 L42 45 Z" fill="#ffd700" />
+                <path d="M50 10 L62 42 L50 35 L38 42 Z" fill="#fff5d0" />
+                <circle cx="50" cy="35" r="4" fill="#ff4d4d" />
+                <!-- Murugan Seated Crown & Torso -->
+                <path d="M100 40 L115 65 L85 65 Z" fill="#ffd700" stroke="#b37d14" />
+                <circle cx="100" cy="78" r="18" fill="#dfa84a" />
+                <!-- Third Eye / Vibhuti -->
+                <line x1="93" y1="74" x2="107" y2="74" stroke="#ffffff" stroke-width="2" />
+                <line x1="94" y1="77" x2="106" y2="77" stroke="#ffffff" stroke-width="1.5" />
+                <circle cx="100" cy="75.5" r="1.5" fill="#d91b1b" />
+                <!-- Ornaments and Shawl -->
+                <path d="M80 98 Q100 135 120 98 L130 150 Q100 160 70 150 Z" fill="#b8860b" opacity="0.9" />
+                <path d="M75 140 Q100 185 125 140 Q135 180 100 190 Q65 180 75 140 Z" fill="#dfa84a" />
+                <!-- Peacock Feather Crown Accent -->
+                <circle cx="100" cy="36" r="6" fill="#00c0a3" />
+                <circle cx="100" cy="36" r="3" fill="#003882" />
+                <!-- Blessing Abhaya Mudra Hand -->
+                <circle cx="75" cy="115" r="7" fill="#ffd700" />
+                <!-- Mayil (Peacock) Base Silhouette -->
+                <path d="M130 170 Q160 145 155 110 Q168 112 175 130 Q180 160 145 190 Z" fill="#135b69" opacity="0.8" />
+                <path d="M140 180 Q170 185 185 210 Q150 220 120 200 Z" fill="#b8860b" />
+              </svg>
+            </div>
+            <div class="deity-name">LORD MURUGAN</div>
+            <div class="deity-blessing" data-en="Grace of Courage & Wisdom" data-ta="ஞானவேல் மற்றும் தைரிய அருள்">Grace of Courage & Wisdom</div>
+          </div>
+        </div>
+
+        <!-- Center 3D Rotating Zodiac Chakra & Sacred OM -->
+        <div class="sanctum-chakra-center">
+          <div class="chakra-halo-spin"></div>
+          <div class="mandala-outer-ring">
+            <svg class="chakra-ring-svg" viewBox="0 0 400 400">
+              <circle cx="200" cy="200" r="190" stroke="#dfa84a" stroke-width="1.5" stroke-dasharray="6 4" fill="none" opacity="0.6"/>
+              <circle cx="200" cy="200" r="170" stroke="#ffd700" stroke-width="2" fill="none" opacity="0.8"/>
+              <circle cx="200" cy="200" r="140" stroke="#dfa84a" stroke-width="1" stroke-dasharray="2 3" fill="none"/>
+              <!-- 12 Zodiac Glyphs Around Ring -->
+              <g class="zodiac-glyphs" fill="#ffd700" font-size="16" font-family="'Cinzel', serif" text-anchor="middle">
+                <!-- 12 Signs at 30 deg steps -->
+                <text x="200" y="45">♈ MESHA</text>
+                <text x="280" y="65">♉ VRISH</text>
+                <text x="340" y="125">♊ MITH</text>
+                <text x="360" y="205">♋ KATAK</text>
+                <text x="340" y="285">♌ SIMHA</text>
+                <text x="280" y="345">♍ KANYA</text>
+                <text x="200" y="370">♎ THULA</text>
+                <text x="120" y="345">♏ VRISC</text>
+                <text x="60" y="285">♐ DHANU</text>
+                <text x="40" y="205">♑ MAKARA</text>
+                <text x="60" y="125">♒ KUMB</text>
+                <text x="120" y="65">♓ MEENA</text>
+              </g>
+            </svg>
+          </div>
+
+          <!-- Central Glowing OM Heart -->
+          <div class="sacred-om-core" id="om-shrine-trigger" title="Click to feel divine resonance">
+            <div class="om-rays"></div>
+            <div class="om-glyph">ॐ</div>
+            <div class="om-caption">SRI CHAKRA</div>
+          </div>
+        </div>
+
+        <!-- Ganesha Wing -->
+        <div class="deity-card deity-ganesha" data-tilt>
+          <div class="deity-aura"></div>
+          <div class="deity-illustration">
+            <div class="gold-statue-container">
+              <svg class="deity-svg" viewBox="0 0 200 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Halo -->
+                <circle cx="100" cy="80" r="48" fill="url(#goldGlowM)" opacity="0.35" filter="url(#divineAuraFilter)" />
+                <circle cx="100" cy="80" r="42" stroke="#e6be6d" stroke-width="1.5" stroke-dasharray="4 3" />
+                <!-- Sacred Trishul & Axe -->
+                <path d="M150 35 L154 185 L146 185 Z" fill="#ffd700" />
+                <path d="M142 45 Q150 30 158 45 Q150 50 142 45 Z" fill="#fff5d0" />
+                <path d="M136 40 Q150 20 164 40 L160 48 Q150 35 140 48 Z" fill="#ffd700" />
+                <!-- Ganesha Crown / Mukut -->
+                <path d="M85 45 L115 45 L108 20 L92 20 Z" fill="#ffd700" stroke="#b37d14" />
+                <!-- Ganesha Elephant Ears -->
+                <path d="M80 75 Q45 60 55 95 Q65 115 80 100 Z" fill="#dfa84a" />
+                <path d="M120 75 Q155 60 145 95 Q135 115 120 100 Z" fill="#dfa84a" />
+                <!-- Elephant Head & Trunk -->
+                <circle cx="100" cy="80" r="22" fill="#dfa84a" />
+                <!-- Trunk curling to left / Modak -->
+                <path d="M98 90 Q98 125 78 125 Q70 120 74 110 Q80 115 86 105 Z" fill="#e8b85c" stroke="#94630a" />
+                <!-- Modak in sweet bowl -->
+                <circle cx="70" cy="115" r="5" fill="#fff2a3" />
+                <!-- Sacred Tilak / Trishul mark -->
+                <line x1="95" y1="72" x2="105" y2="72" stroke="#d91b1b" stroke-width="2.5" />
+                <line x1="100" y1="67" x2="100" y2="78" stroke="#ffd700" stroke-width="2" />
+                <!-- Pot Belly & Seated Pose -->
+                <circle cx="100" cy="148" r="34" fill="#dfa84a" />
+                <path d="M72 170 Q100 200 128 170 Q145 195 100 205 Q55 195 72 170 Z" fill="#b8860b" />
+                <path d="M88 120 Q100 150 112 120" stroke="#ffd700" stroke-width="3" fill="none" />
+              </svg>
+            </div>
+            <div class="deity-name">LORD GANESHA</div>
+            <div class="deity-blessing" data-en="Remover of All Obstacles" data-ta="விக்னங்களை தீர்க்கும் முழுமுதற் கடவுள்">Remover of All Obstacles</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Feature Ribbons -->
+      <div class="hero-ribbon-grid">
+        <div class="ribbon-card">
+          <i data-lucide="map-pin" class="ribbon-icon"></i>
+          <div>
+            <div class="ribbon-title" data-en="Chennai Centre & Worldwide" data-ta="சென்னை மையம் & உலகெங்கும்">Chennai Centre & Worldwide</div>
+            <div class="ribbon-desc" data-en="Offline & Online Consultations" data-ta="நேரடி & இணைய வழி ஆலோசனை">Offline & Online Consultations</div>
+          </div>
+        </div>
+
+        <div class="ribbon-card">
+          <i data-lucide="languages" class="ribbon-icon"></i>
+          <div>
+            <div class="ribbon-title" data-en="Tamil & English Predictions" data-ta="தமிழ் & ஆங்கில மொழிகளில்">Tamil & English Predictions</div>
+            <div class="ribbon-desc" data-en="Clear, Authentic & Actionable Guidance" data-ta="தெளிவான, வழிகாட்டும் பலன்கள்">Clear, Authentic & Actionable</div>
+          </div>
+        </div>
+
+        <div class="ribbon-card">
+          <i data-lucide="phone-call" class="ribbon-icon"></i>
+          <div>
+            <div class="ribbon-title" data-en="Direct WhatsApp / Call" data-ta="வாட்ஸ்அப் / நேரடி தொடர்பு">Direct WhatsApp / Call</div>
+            <div class="ribbon-desc" data-en="+91 9698016673" data-ta="+91 9698016673">+91 9698016673</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="hero-actions">
+        <a href="#booking" class="gold-gradient-btn glow-bounce">
+          <i data-lucide="calendar"></i>
+          <span data-en="Book Consultation Now" data-ta="இப்போதே முன்பதிவு செய்க">Book Consultation Now</span>
+        </a>
+        <a href="https://wa.me/919698016673?text=Namaste%20Maharishi%20Parthibangovindharaj%20Ji%2C%20I%20would%20like%20to%20consult%20with%20you%20regarding%20my%20Horoscope." target="_blank" rel="noopener noreferrer" class="whatsapp-glow-btn">
+          <i data-lucide="message-circle"></i>
+          <span data-en="WhatsApp Chat (+91 9698016673)" data-ta="வாட்ஸ்அப் அரட்டை (+91 9698016673)">WhatsApp Chat</span>
+        </a>
+        <button id="view-flyer-btn" class="glass-btn">
+          <i data-lucide="image"></i>
+          <span data-en="View Consecrated Flyer" data-ta="அழைப்பிதழை காண்க">View Consecrated Flyer</span>
+        </button>
+      </div>
+
+      <!-- Live Panchangam Day Ticker -->
+      <div class="panchangam-strip">
+        <span class="panchangam-dot"></span>
+        <span class="panchangam-title" data-en="Cosmic Day Alignment:" data-ta="இன்றைய பஞ்சாங்க குறிப்பு:">Cosmic Day Alignment:</span>
+        <span id="live-panchangam-text">Loading Auspicious Tithi & Nakshatra...</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 Pillars of Divine Wisdom (Services Grid) -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag" data-en="SACRED SCIENCES OF DESTINY" data-ta="விதியை வெல்லும் வேத சாஸ்திரங்கள்">SACRED SCIENCES OF DESTINY</div>
+        <h2 class="section-title gold-shimmer" data-en="The Four Pillars of Divine Guidance" data-ta="நான்கு தெய்வீக ஜோதிட தூண்கள்">
+          The Four Pillars of Divine Guidance
+        </h2>
+        <p class="section-desc" data-en="Under the divine blessings of Siddhar Bogar, Maharishi Parthibangovindharaj integrates authentic Vedic shastras with empirical research to solve your life's deepest challenges." data-ta="போகர் சித்தரின் ஆசியுடன், மகரிஷி பார்த்திபன்கோவிந்தராஜ் வேத சாஸ்திரங்களை அறிவியல் பூர்வமாக ஆராய்ந்து உங்கள் வாழ்வின் சிக்கல்களுக்கு தீர்வு தருகிறார்.">
+          Under the divine blessings of Siddhar Bogar, Maharishi Parthibangovindharaj integrates authentic Vedic shastras with empirical research to solve your life's deepest challenges.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <!-- 1. ASTROLOGY -->
+        <div class="service-card" data-tilt>
+          <div class="service-card-border"></div>
+          <div class="service-icon-box">
+            <span class="service-emoji">⭐</span>
+          </div>
+          <div class="service-pill" data-en="Vedic Astrology" data-ta="வேத ஜோதிடம்">Vedic Astrology</div>
+          <h3 class="service-name" data-en="Astrology Consultations" data-ta="ஜாதக கணிப்பு & பலன்கள்">Astrology Consultations</h3>
+          <p class="service-summary" data-en="Deep analysis of your Janma Kundali, Dasha-Bhukti periods, and planetary transits for clear destiny navigation." data-ta="உங்கள் ஜனன ஜாதகம், தசா-புக்தி மற்றும் கிரக சஞ்சாரங்களை துல்லியமாக ஆராய்ந்து வெற்றி பெற வழிகாட்டுகிறோம்.">
+            Deep analysis of your Janma Kundali, Dasha-Bhukti periods, and planetary transits for clear destiny navigation.
+          </p>
+          <ul class="service-list">
+            <li><i data-lucide="check-circle-2"></i> <span data-en="Marriage & Porutham Compatibility" data-ta="திருமணப் பொருத்தம் & தோஷ நிவர்த்தி">Marriage & Porutham Compatibility</span></li>
+            <li><i data-lucide="check-circle-2"></i> <span data-en="Life Education & Higher Studies" data-ta="கல்வி & உயர் கல்வி வழிகாட்டல்">Life Education & Higher Studies</span></li>
+            <li><i data-lucide="check-circle-2"></i> <span data-en="Karma, Past Life & Pitru Dosha" data-ta="கர்ம வினை, பித்ரு தோஷ பரிகாரம்">Karma, Past Life & Pitru Dosha</span></li>
+            <li><i data-lucide="check-circle-2"></i> <span data-en="Children & Santhana Bhagyam" data-ta="சந்தான பாக்கியம் (குழந்தை பேறு)">Children & Santhana Bhagyam</span></li>
+            <li><i data-lucide="check-circle-2"></i> <span data-en="Business, Startup & Job Growth" data-ta="தொழில், வேலை வாய்ப்பு & முன்னேற்றம்">Business, Startup & Job Growth</span></li>
+            <li><i data-lucide="check-circle-2"></i> <span data-en="Health, Longevity & Wealth Prosperity" data-ta="உடல் நலம், ஆயுள் & தன பிராப்தி">Health, Longevity & Wealth Prosperity</span></li>
+          </ul>
+          <a href="#booking" class="service-btn" data-en="Consult on Horoscope →" data-ta="ஜாதகம் பார்க்க முன்பதிவு →">Consult on Horoscope →</a>
+        </div>
+
+        <!-- 2. NUMEROLOGY -->
+        <div class="service-card featured-service" data-tilt>
+          <div class="badge-featured" data-en="HIGH ACCURACY" data-ta="அதி துல்லியம்">HIGH ACCURACY</div>
+          <div class="service-card-border"></div>
+          <div class="service-icon-box">
+            <span class="service-emoji">⚡</span>
+          </div>
+          <div class="service-pill" data-en="Vibration Science" data-ta="எண் கணித சாஸ்திரம்">Vibration Science</div>
+          <h3 class="service-name" data-en="Vedic & Chaldean Numerology" data-ta="எண் கணித அதிர்வுகள்">Vedic & Chaldean Numerology</h3>
+          <p class="service-summary" data-en="Harmonize your life with the supreme numeric frequency of the cosmos for instant positive manifestation." data-ta="பிரபஞ்ச எண்களின் அதிர்வோடு உங்கள் பெயரை இணைத்து வாழ்க்கையில் உடனடி மாற்றங்களை ஏற்படுத்துங்கள்.">
+            Harmonize your life with the supreme numeric frequency of the cosmos for instant positive manifestation.
+          </p>
+          <ul class="service-list">
+            <li><i data-lucide="check-circle-2"></i> <span data-en="Lucky Numbers for Financial Growth" data-ta="தன லாபம் தரும் அதிர்ஷ்ட எண்கள்">Lucky Numbers for Financial Growth</span></li>
+            <li><i data-lucide="check-circle-2"></i> <span data-en="Name Selection for Newborns & Baby Names" data-ta="குழந்தைகளுக்கு அதிர்ஷ்ட பெயர் தேர்வு">Name Selection for Newborns & Babies</span></li>
+            <li><i data-lucide="check-circle-2"></i> <span data-en="Corporate Brand & Business Name Alignment" data-ta="தொழில் நிறுவன பெயர் அதிர்வு திருத்தம்">Corporate & Business Name Alignment</span></li>
+            <li><i data-lucide="check-circle-2"></i> <span data-en="Auspicious Date Selection (Muhurtham)" data-ta="சுப நிகழ்வுகளுக்கான தேதி தேர்வு">Auspicious Date Selection (Muhurtham)</span></li>
+            <li><i data-lucide="check-circle-2"></i> <span data-en="Signature Vibration Correction" data-ta="கையெழுத்து அதிர்வு திருத்தம்">Signature Vibration Correction</span></li>
+            <li><i data-lucide="check-circle-2"></i> <span data-en="Vehicle & Mobile Number Compatibility" data-ta="வண்டி & செல்போன் எண் பொருத்தம்">Vehicle & Mobile Number Compatibility</span></li>
+          </ul>
+          <a href="#calculator" class="service-btn" data-en="Calculate Name Vibration →" data-ta="எண் கணிதம் கணக்கிடுக →">Calculate Name Vibration →</a>
+        </div>
+
+        <!-- 3. GEMOLOGY -->
+        <div class="service-card" data-tilt>
+          <div class="service-card-border"></div>
+          <div class="service-icon-box">
+            <span class="service-emoji">💎</span>
+          </div>
+          <div class="service-pill" data-en="Ratna Shastra" data-ta="ரத்தினவியல் ஜோதிடம்">Ratna Shastra</div>
+          <h3 class="service-name" data-en="Gemology & Energy Balancing" data-ta="ரத்தினவியல் & ஆற்றல் சமநிலை">Gemology & Energy Balancing</h3>
+          <p class="service-summary" data-en="Empower your weak benefic planets and deflect negative cosmic rays with consecrated astrological gemstones." data-ta="சாதகமான கிரகங்களை பலப்படுத்தவும், தீய கதிர்வீச்சுகளை தடுக்கவும் சரியான ரத்தினங்களை பரிந்துரைக்கிறோம்.">
+            Empower your weak benefic planets and deflect negative cosmic rays with consecrated astrological gemstones.
+          </p>
+          <ul class="service-list">
+            <li><i data-lucide="check-circle-2"></i> <span data-en="Personalized Lucky Stones by Birth Chart" data-ta="ஜாதகப்படி அதிர்ஷ்ட நவரத்தின தேர்வு">Lucky Stones by Birth Chart</span></li>
+            <li><i data-lucide="check-circle-2"></i> <span data-en="Good Vibration & Aura Field Cleansing" data-ta="நல்ல அதிர்வுகள் & ஆரா தூய்மை">Good Vibration & Aura Field Cleansing</span></li>
+            <li><i data-lucide="check-circle-2"></i> <span data-en="Chakra & Planetary Energy Balancing" data-ta="சக்கரங்கள் மற்றும் கிரக சக்தி சமநிலை">Chakra & Planetary Energy Balancing</span></li>
+            <li><i data-lucide="check-circle-2"></i> <span data-en="Finger & Metal Guidance (Gold / Silver / Panchaloha)" data-ta="அணியும் விரல் & உலோகம் தேர்வு முறை">Finger & Metal Guidance</span></li>
+            <li><i data-lucide="check-circle-2"></i> <span data-en="Navaratna Consecration & Mantra Vidhi" data-ta="நவரத்தின உருவேற்றுதல் மற்றும் விதிமுறைகள்">Navaratna Consecration & Vidhi</span></li>
+            <li><i data-lucide="check-circle-2"></i> <span data-en="Identification of Authentic Unheated Gemstones" data-ta="இயற்கையான அசல் ரத்தினங்களை அறிதல்">Authentic Unheated Gemstone Selection</span></li>
+          </ul>
+          <a href="#booking" class="service-btn" data-en="Get Gemstone Guidance →" data-ta="ரத்தின ஆலோசனை பெற →">Get Gemstone Guidance →</a>
+        </div>
+
+        <!-- 4. VASTU -->
+        <div class="service-card" data-tilt>
+          <div class="service-card-border"></div>
+          <div class="service-icon-box">
+            <span class="service-emoji">🏛️</span>
+          </div>
+          <div class="service-pill" data-en="Sthapatya Veda" data-ta="வாஸ்து சாஸ்திரம்">Sthapatya Veda</div>
+          <h3 class="service-name" data-en="Vastu Shastra & Remedies" data-ta="வாஸ்து சாஸ்திரம் & நிவர்த்தி">Vastu Shastra & Remedies</h3>
+          <p class="service-summary" data-en="Harmonize your living and commercial premises with the 5 primordial elements (Pancha Bhootas) for abundance." data-ta="ஐம்பூதங்களின் சக்தியை உங்கள் இல்லத்திலும் தொழில் ஸ்தாபனத்திலும் ஒருங்கிணைத்து ஐஸ்வர்யம் பெருக செய்கிறோம்.">
+            Harmonize your living and commercial premises with the 5 primordial elements (Pancha Bhootas) for abundance.
+          </p>
+          <ul class="service-list">
+            <li><i data-lucide="check-circle-2"></i> <span data-en="Home & Residential Villa Vastu Audit" data-ta="வீடு மற்றும் குடியிருப்பு வாஸ்து ஆய்வு">Home & Residential Villa Vastu Audit</span></li>
+            <li><i data-lucide="check-circle-2"></i> <span data-en="Office, Corporate & Commercial Vastu" data-ta="அலுவலகம் & வணிக வளாக வாஸ்து">Office & Commercial Vastu</span></li>
+            <li><i data-lucide="check-circle-2"></i> <span data-en="Factory & Industrial Layout Planning" data-ta="தொழிற்சாலை உற்பத்தி வாஸ்து திட்டமிடல்">Factory & Industrial Layout Planning</span></li>
+            <li><i data-lucide="check-circle-2"></i> <span data-en="Remedies without Demolition or Breakage" data-ta="இடிக்காமல் செய்யும் எளிய பரிகாரங்கள்">Remedies without Demolition</span></li>
+            <li><i data-lucide="check-circle-2"></i> <span data-en="Directional Energy Gate & Entrance Correction" data-ta="தலைவாசல் மற்றும் திசை சக்தி சீரமைப்பு">Entrance & Directional Correction</span></li>
+            <li><i data-lucide="check-circle-2"></i> <span data-en="Kitchen (Agni), Master Bedroom & Pooja Sthanam" data-ta="அக்னி மூலை, ஈசானியம், குபேர மூலை அமைப்பு">Kitchen, Bedroom & Pooja Sthanam</span></li>
+          </ul>
+          <a href="#booking" class="service-btn" data-en="Request Vastu Consultation →" data-ta="வாஸ்து ஆலோசனை கோருக →">Request Vastu Consultation →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Vedic Numerology & Life Path Calculator -->
+  <section class="calculator-section" id="calculator">
+    <div class="container">
+      <div class="calc-wrapper">
+        <div class="calc-intro">
+          <div class="section-tag" data-en="FREE INSTANT DIVINE TOOL" data-ta="இலவச உடனடி ஆன்மீக கருவி">FREE INSTANT DIVINE TOOL</div>
+          <h2 class="gold-shimmer" data-en="Discover Your Planetary Name Vibration" data-ta="உங்கள் பெயரின் அதிர்ஷ்ட அதிர்வை அறிக">
+            Discover Your Planetary Name Vibration
+          </h2>
+          <p data-en="According to Vedic and Chaldean numerology, every letter resonates with planetary frequencies. Calculate your Destiny & Psychic Number to see your cosmic alignment." data-ta="வேத மற்றும் சால்டியன் எண் கணிதப்படி, ஒவ்வொரு எழுத்தும் குறிப்பிட்ட கிரக அதிர்வுகளை கொண்டுள்ளது. உங்கள் விதியை அறிய உங்கள் விவரங்களை உள்ளிடுங்கள்.">
+            According to Vedic and Chaldean numerology, every letter resonates with planetary frequencies. Calculate your Destiny & Psychic Number to see your cosmic alignment.
+          </p>
+
+          <div class="calc-form">
+            <div class="form-group">
+              <label for="calc-name" data-en="Your Full Name (As per signature / official):" data-ta="உங்கள் முழுப் பெயர்:">Your Full Name:</label>
+              <input type="text" id="calc-name" placeholder="e.g. PARTHIBAN GOVINDHARAJ" autocomplete="off">
+            </div>
+
+            <div class="form-group">
+              <label for="calc-dob" data-en="Date of Birth:" data-ta="பிறந்த தேதி:">Date of Birth:</label>
+              <input type="date" id="calc-dob" value="1992-05-18">
+            </div>
+
+            <button id="calculate-btn" class="gold-gradient-btn full-w">
+              <i data-lucide="sparkles"></i>
+              <span data-en="Reveal My Cosmic Numbers" data-ta="என் அதிர்ஷ்ட எண்களை காண்க">Reveal My Cosmic Numbers</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Result Card -->
+        <div class="calc-result-box" id="calc-result-box">
+          <div class="result-placeholder" id="calc-initial">
+            <div class="mystic-icon">🔮</div>
+            <h4 data-en="Awaiting Your Details" data-ta="விவரங்களை பதிவு செய்க">Awaiting Your Details</h4>
+            <p data-en="Enter your name and birth date to generate your personalized Vedic numerology profile." data-ta="உங்கள் பெயர் மற்றும் பிறந்த தேதியை உள்ளிட்டதும் கிரக பலன்கள் உடனடியாக கணிக்கப்படும்.">
+              Enter your name and birth date to generate your personalized Vedic numerology profile.
+            </p>
+          </div>
+
+          <div class="result-content hidden" id="calc-actual-result">
+            <div class="result-header">
+              <div class="number-badge">
+                <span class="label" data-en="Psychic (Mulank)" data-ta="ஜன்ம எண்">Psychic (Mulank)</span>
+                <span class="val" id="res-psychic">1</span>
+              </div>
+              <div class="number-badge highlight">
+                <span class="label" data-en="Destiny (Bhagyank)" data-ta="விதி எண்">Destiny (Bhagyank)</span>
+                <span class="val" id="res-destiny">9</span>
+              </div>
+              <div class="number-badge">
+                <span class="label" data-en="Name Vibration" data-ta="பெயர் அதிர்வு">Name Vibration</span>
+                <span class="val" id="res-name-num">37/1</span>
+              </div>
+            </div>
+
+            <div class="result-details">
+              <div class="res-item">
+                <span class="res-label" data-en="Ruling Planet:" data-ta="ஆளும் கிரகம்:">Ruling Planet:</span>
+                <span class="res-val" id="res-planet">Sun (சூரிய பகவான்)</span>
+              </div>
+              <div class="res-item">
+                <span class="res-label" data-en="Auspicious Gemstone:" data-ta="அதிர்ஷ்ட ரத்தினம்:">Auspicious Gemstone:</span>
+                <span class="res-val" id="res-gem">Ruby (மாணிக்கம்)</span>
+              </div>
+              <div class="res-item">
+                <span class="res-label" data-en="Lucky Days & Colors:" data-ta="அதிர்ஷ்ட நாட்கள் & நிறங்கள்:">Lucky Days & Colors:</span>
+                <span class="res-val" id="res-days">Sunday, Red & Gold</span>
+              </div>
+              <div class="res-item">
+                <span class="res-label" data-en="Divine Guidance:" data-ta="தெய்வீக ஆலோசனை:">Divine Guidance:</span>
+                <span class="res-val" id="res-reading">Leadership, natural authority and abundance when properly aligned.</span>
+              </div>
+            </div>
+
+            <div class="result-cta">
+              <a id="consult-aligned-btn" href="https://wa.me/919698016673" target="_blank" class="gold-pill-btn">
+                <i data-lucide="message-circle"></i>
+                <span data-en="Consult Maharishi to Balance This Name" data-ta="மகரிஷியிடம் பெயர் அதிர்வு ஆலோசனை பெற">Consult Maharishi to Balance This Name</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive 12 Rasi (Zodiac Chakra) Guidance -->
+  <section class="zodiac-section" id="zodiac">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag" data-en="12 RASIS OF VEDIC ASTROLOGY" data-ta="12 ராசிகளின் தெய்வீக தாத்பரியம்">12 RASIS OF VEDIC ASTROLOGY</div>
+        <h2 class="section-title gold-shimmer" data-en="Explore Your Rasi (Moon Sign) Alignment" data-ta="உங்கள் ராசிக்கான வழிகாட்டலை காண்க">
+          Explore Your Rasi (Moon Sign) Alignment
+        </h2>
+        <p class="section-desc" data-en="Click on your Moon Sign below to discover its governing deity, planetary lord, auspicious element, and personalized consultation remedy." data-ta="கீழே உங்கள் ராசியை தேர்ந்தெடுத்து அதன் ஆளும் தெய்வம், அதிபதி மற்றும் பரிகார வழிகாட்டலை அறியுங்கள்.">
+          Click on your Moon Sign below to discover its governing deity, planetary lord, auspicious element, and personalized consultation remedy.
+        </p>
+      </div>
+
+      <div class="rasi-tabs-grid" id="rasi-grid">
+        <!-- Will be populated dynamically or static for smooth interaction -->
+      </div>
+
+      <!-- Active Rasi Highlight Drawer -->
+      <div class="active-rasi-card" id="active-rasi-card">
+        <div class="rasi-card-inner">
+          <div class="rasi-visual">
+            <div class="rasi-symbol-large" id="current-rasi-icon">♈</div>
+            <div class="rasi-deity-shield">
+              <span class="deity-tag" id="current-rasi-deity">Lord Murugan</span>
+            </div>
+          </div>
+          <div class="rasi-info">
+            <div class="rasi-head">
+              <h3 id="current-rasi-name">Mesha (மேஷம் - Aries)</h3>
+              <span class="rasi-element" id="current-rasi-elem">🔥 Fire Element • Agni</span>
+            </div>
+            <div class="rasi-properties">
+              <div class="prop"><span class="k" data-en="Planetary Lord:" data-ta="ராசி நாதன்:">Planetary Lord:</span> <strong id="current-rasi-lord">Mars (செவ்வாய்)</strong></div>
+              <div class="prop"><span class="k" data-en="Lucky Stone:" data-ta="அதிர்ஷ்ட ரத்தினம்:">Lucky Stone:</span> <strong id="current-rasi-stone">Red Coral (பவளம்)</strong></div>
+              <div class="prop"><span class="k" data-en="Key Strengths:" data-ta="முக்கிய பலம்:">Key Strengths:</span> <strong id="current-rasi-strength">Courage, Leadership, Ambition</strong></div>
+            </div>
+            <p class="rasi-remedy-text" id="current-rasi-text">
+              Under Mars, native individuals possess vibrant energy. Consulting Maharishi helps direct this warrior energy into career breakthroughs and marital harmony.
+            </p>
+            <div class="rasi-act">
+              <a id="rasi-consult-link" href="#booking" class="gold-gradient-btn">
+                <i data-lucide="sparkles"></i>
+                <span data-en="Get Complete Mesha Horoscope Analysis" data-ta="முழுமையான ராசி பலன் ஆலோசனை">Get Complete Horoscope Analysis</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Maharishi & Bogar Lineage Section -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-media">
+          <div class="flyer-showcase-frame" data-tilt>
+            <img src="assets/maharishi-flyer.jpg" alt="Maharishi Parthibangovindharaj - Bogar Astrology Research Centre" class="flyer-img" id="about-flyer-thumb">
+            <div class="flyer-overlay">
+              <span class="zoom-badge">
+                <i data-lucide="maximize-2"></i>
+                <span data-en="Click to Expand Flyer" data-ta="பெரிதாக்கி பார்க்க கிளிக் செய்க">Click to Expand Flyer</span>
+              </span>
+            </div>
+          </div>
+          <div class="centre-accreditation">
+            <div class="shield-icon">🏛️</div>
+            <div>
+              <div class="accred-title">BOGAR ASTROLOGY RESEARCH CENTRE</div>
+              <div class="accred-loc">Chennai, Tamil Nadu, India</div>
+              <div class="accred-sub">Serving Seekers Worldwide in Tamil & English</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <div class="section-tag" data-en="DIVINE LINEAGE & RESEARCH" data-ta="ஆன்மீக பாரம்பரியம் & ஆராய்ச்சி">DIVINE LINEAGE & RESEARCH</div>
+          <h2 class="gold-shimmer" data-en="Maharishi Parthibangovindharaj" data-ta="மகரிஷி பார்த்திபன்கோவிந்தராஜ்">
+            Maharishi Parthibangovindharaj
+          </h2>
+          <div class="sub-credentials">
+            <strong>M.A., M.Phil.</strong> • Revered Astro Consultant & Vedic Researcher
+          </div>
+
+          <p class="bio-lead" data-en="Carrying forward the sublime spiritual blessings of Siddhar Bogar — the master sage of alchemy and cosmic medicine — Maharishi Parthibangovindharaj has dedicated his life to illuminating the human journey through Vedic Astrology, Numerology, Gemology, and Vastu." data-ta="பழனி நவபாஷாண சிலையை வடித்த போகர் சித்தரின் பரம்பரை அருளாசியுடன், மகரிஷி பார்த்திபன்கோவிந்தராஜ் அவர்கள் எம்.ஏ., எம்.பில். பட்டப்படிப்புகளுடன் வேத ஜோதிடம், எண் கணிதம், ரத்தினவியல் மற்றும் வாஸ்து சாஸ்திரங்களில் பல ஆண்டு தீவிர ஆராய்ச்சி செய்து பல்லாயிரக்கணக்கானோருக்கு நல்வழி காட்டியுள்ளார்.">
+            Carrying forward the sublime spiritual blessings of Siddhar Bogar — the master sage of alchemy and cosmic medicine — Maharishi Parthibangovindharaj has dedicated his life to illuminating the human journey through Vedic Astrology, Numerology, Gemology, and Vastu.
+          </p>
+
+          <div class="wisdom-highlights">
+            <div class="highlight-box">
+              <div class="hl-num">25+</div>
+              <div class="hl-desc" data-en="Years of Dedicated Astrological Research" data-ta="ஆண்டுகால ஜோதிட ஆராய்ச்சி அனுபவம்">Years of Dedicated Astrological Research</div>
+            </div>
+            <div class="highlight-box">
+              <div class="hl-num">10,000+</div>
+              <div class="hl-desc" data-en="Horoscopes Analyzed with High Accuracy" data-ta="துல்லியமாக கணிக்கப்பட்ட ஜாதகங்கள்">Horoscopes Analyzed with High Accuracy</div>
+            </div>
+            <div class="highlight-box">
+              <div class="hl-num">100%</div>
+              <div class="hl-desc" data-en="Non-Destructive Vastu & Karma Remedies" data-ta="இடிக்காத வாஸ்து & எளிய பரிகாரங்கள்">Non-Destructive Vastu & Karma Remedies</div>
+            </div>
+          </div>
+
+          <div class="consult-modes-box">
+            <h4 data-en="Available Modes of Consultation:" data-ta="ஆலோசனை பெறும் வழிகள்:">Available Modes of Consultation:</h4>
+            <div class="modes-list">
+              <div class="mode-item">
+                <i data-lucide="video"></i>
+                <div>
+                  <strong data-en="Online Consultation" data-ta="இணைய வழி ஆலோசனை">Online Consultation</strong>
+                  <p data-en="WhatsApp Video, Phone Call, Detailed Voice/PDF Report" data-ta="வாட்ஸ்அப் வீடியோ, போன் கால் அல்லது விரிவான அறிக்கை">WhatsApp Video, Phone Call, Detailed Voice/PDF Report</p>
+                </div>
+              </div>
+              <div class="mode-item">
+                <i data-lucide="building"></i>
+                <div>
+                  <strong data-en="Offline Direct Consultation" data-ta="நேரடி சந்திப்பு ஆலோசனை">Offline Direct Consultation</strong>
+                  <p data-en="Visit Bogar Astrology Research Centre, Chennai (By Appointment)" data-ta="போகர் ஜோதிட ஆராய்ச்சி மையம், சென்னை (முன்பதிவு அவசியம்)">Visit Bogar Astrology Research Centre, Chennai (By Appointment)</p>
+                </div>
+              </div>
+              <div class="mode-item">
+                <i data-lucide="globe"></i>
+                <div>
+                  <strong data-en="Bilingual Clarity" data-ta="இரு மொழி சேவை">Bilingual Clarity</strong>
+                  <p data-en="Predictions rendered fluently in Tamil & English" data-ta="தமிழ் மற்றும் ஆங்கிலத்தில் விரிவான பலன்கள்">Predictions rendered fluently in Tamil & English</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Appointment Booking & WhatsApp Direct Form -->
+  <section class="booking-section" id="booking">
+    <div class="container">
+      <div class="booking-card">
+        <div class="booking-card-header">
+          <div class="section-tag" data-en="DIVINE CONSULTATION REGISTRATION" data-ta="தெய்வீக ஆலோசனை முன்பதிவு">DIVINE CONSULTATION REGISTRATION</div>
+          <h2 class="gold-shimmer" data-en="Book Your Sacred Consultation with Maharishi" data-ta="மகரிஷியிடம் ஆலோசனை பெற முன்பதிவு செய்க">
+            Book Your Sacred Consultation with Maharishi
+          </h2>
+          <p data-en="Fill in your birth details below. Your information will be directly sent to Maharishi's official WhatsApp (+91 9698016673) for prompt scheduling." data-ta="உங்கள் பிறந்த விவரங்களை உள்ளிடுங்கள். உடனடியாக மகரிஷி அவர்களின் அதிகாரப்பூர்வ வாட்ஸ்அப்பிற்கு தகவல் அனுப்பப்பட்டு நேரம் ஒதுக்கப்படும்.">
+            Fill in your birth details below. Your information will be directly sent to Maharishi's official WhatsApp (+91 9698016673) for prompt scheduling.
+          </p>
+        </div>
+
+        <form id="consultation-form" class="booking-form">
+          <div class="form-row two-col">
+            <div class="input-block">
+              <label for="client-name" data-en="Full Name *" data-ta="முழுப் பெயர் *">Full Name *</label>
+              <input type="text" id="client-name" placeholder="Enter your full name" required>
+            </div>
+            <div class="input-block">
+              <label for="client-phone" data-en="WhatsApp / Phone Number *" data-ta="வாட்ஸ்அப் / செல்போன் எண் *">WhatsApp / Phone Number *</label>
+              <input type="tel" id="client-phone" placeholder="e.g. +91 9876543210" required>
+            </div>
+          </div>
+
+          <div class="form-row three-col">
+            <div class="input-block">
+              <label for="client-dob" data-en="Date of Birth *" data-ta="பிறந்த தேதி *">Date of Birth *</label>
+              <input type="date" id="client-dob" required>
+            </div>
+            <div class="input-block">
+              <label for="client-tob" data-en="Time of Birth (Exact)" data-ta="பிறந்த நேரம் (துல்லியமாக)">Time of Birth (Exact)</label>
+              <input type="time" id="client-tob">
+            </div>
+            <div class="input-block">
+              <label for="client-pob" data-en="Place of Birth (City, State) *" data-ta="பிறந்த ஊர் மற்றும் மாவட்டம் *">Place of Birth *</label>
+              <input type="text" id="client-pob" placeholder="e.g. Chennai, Tamil Nadu" required>
+            </div>
+          </div>
+
+          <div class="form-row three-col">
+            <div class="input-block">
+              <label for="client-service" data-en="Consultation Service *" data-ta="தேவையான சேவை *">Consultation Service *</label>
+              <select id="client-service">
+                <option value="Astrology (Horoscope & Life Analysis)">Vedic Astrology (Horoscope & Life)</option>
+                <option value="Marriage Compatibility (Porutham)">Marriage Compatibility & Porutham</option>
+                <option value="Numerology (Name & Luck Correction)">Numerology (Name & Luck Correction)</option>
+                <option value="Gemology (Lucky Gemstones & Energy)">Gemology (Lucky Gemstones & Energy)</option>
+                <option value="Vastu Shastra (Home / Business)">Vastu Shastra (Home / Business)</option>
+                <option value="Comprehensive Complete Life Consultation">Complete Comprehensive Life Consultation</option>
+              </select>
+            </div>
+            <div class="input-block">
+              <label for="client-mode" data-en="Consultation Mode *" data-ta="ஆலோசனை முறை *">Consultation Mode *</label>
+              <select id="client-mode">
+                <option value="Online WhatsApp Video / Call">Online (WhatsApp Video / Call)</option>
+                <option value="Direct Offline at Bogar Centre Chennai">Direct Offline (Bogar Centre, Chennai)</option>
+              </select>
+            </div>
+            <div class="input-block">
+              <label for="client-lang" data-en="Preferred Language *" data-ta="விருப்பமான மொழி *">Preferred Language *</label>
+              <select id="client-lang">
+                <option value="Tamil (தமிழ்)">Tamil (தமிழ்)</option>
+                <option value="English">English</option>
+                <option value="Both Tamil & English">Both Tamil & English</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="input-block">
+              <label for="client-notes" data-en="Specific Questions or Life Situation (Optional)" data-ta="குறிப்பிட்ட கேள்விகள் / தற்போதைய சூழ்நிலை">Specific Questions (Optional)</label>
+              <textarea id="client-notes" rows="3" placeholder="e.g. Marriage delay, career transition, business expansion, newborn naming..."></textarea>
+            </div>
+          </div>
+
+          <div class="booking-submit-area">
+            <button type="submit" class="whatsapp-large-btn glow-bounce">
+              <i data-lucide="send"></i>
+              <span data-en="Send Consultation Request to WhatsApp (+91 9698016673)" data-ta="வாட்ஸ்அப் வழியே முன்பதிவு செய்க (+91 9698016673)">Send Consultation Request to WhatsApp</span>
+            </button>
+            <div class="direct-call-hint">
+              <span data-en="Or Call Directly:" data-ta="அல்லது நேரடியாக அழைக்க:">Or Call Directly:</span>
+              <a href="tel:+919698016673" class="call-link">
+                <i data-lucide="phone"></i> +91 9698016673
+              </a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Client Testimonials & Divine Experiences -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag" data-en="AUTHENTIC EXPERIENCES" data-ta="பக்தர்களின் அனுபவங்கள்">AUTHENTIC EXPERIENCES</div>
+        <h2 class="section-title gold-shimmer" data-en="Echoes of Divine Transformation" data-ta="வாழ்க்கை மாறிய பக்தர்களின் சான்றுகள்">
+          Echoes of Divine Transformation
+        </h2>
+        <p class="section-desc" data-en="Read how individuals and families across India and abroad found peace, clarity, and prosperity through Maharishi's guidance." data-ta="மகரிஷி அவர்களின் துல்லிய ஜோதிட வழிகாட்டலால் வாழ்வில் அமைதியும் வெற்றியும் பெற்றவர்களின் உண்மை அனுபவங்கள்.">
+          Read how individuals and families across India and abroad found peace, clarity, and prosperity through Maharishi's guidance.
+        </p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testi-card">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p class="testi-quote" data-en="“Our daughter's marriage was getting delayed for 4 years. Maharishi Ji identified the specific planetary dosha and recommended a simple Pariharam. Within 5 months, she got happily married to an ideal groom in Chennai.”" data-ta="“எங்கள் மகளுக்கு 4 வருடமாக தள்ளிப்போன திருமணம், மகரிஷி அவர்களின் தோஷ நிவர்த்தி மற்றும் எளிய பரிகாரத்தால் அடுத்த 5 மாதங்களில் மிக நல்ல வரனுடன் கூடிவந்தது.”">
+            “Our daughter's marriage was getting delayed for 4 years. Maharishi Ji identified the specific planetary dosha and recommended a simple Pariharam. Within 5 months, she got happily married to an ideal groom in Chennai.”
+          </p>
+          <div class="testi-author">
+            <div class="author-avatar">🪷</div>
+            <div>
+              <div class="author-name">K. Sundararajan</div>
+              <div class="author-meta" data-en="Mylapore, Chennai • Marriage Compatibility" data-ta="மயிலாப்பூர், சென்னை • திருமணப் பொருத்தம்">Mylapore, Chennai • Marriage Compatibility</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p class="testi-quote" data-en="“I changed my business enterprise name spelling based on Maharishi Ji's Chaldean numerology vibration. The cash flow problems resolved and we opened our second branch in Singapore.”" data-ta="“எங்கள் நிறுவனத்தின் பெயரை மகரிஷி அவர்களின் எண் கணித அதிர்வுக்கு மாற்றிய பின், தொழில் முடக்கம் நீங்கி சிங்கப்பூரில் புதிய கிளை துவங்கும் அளவிற்கு வளர்ச்சி கிடைத்தது.”">
+            “I changed my business enterprise name spelling based on Maharishi Ji's Chaldean numerology vibration. The cash flow problems resolved and we opened our second branch in Singapore.”
+          </p>
+          <div class="testi-author">
+            <div class="author-avatar">🔱</div>
+            <div>
+              <div class="author-name">R. Karthik Narayanan</div>
+              <div class="author-meta" data-en="Singapore / Chennai • Business Numerology" data-ta="சிங்கப்பூர் / சென்னை • தொழில் எண் கணிதம்">Singapore / Chennai • Business Numerology</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p class="testi-quote" data-en="“We did an online consultation from the UK for our new home Vastu. Maharishi gave non-demolition remedies with crystal energy balancing. The heavy negative atmosphere completely transformed into pure divine peace.”" data-ta="“லண்டனிலிருந்து எங்கள் வீட்டிற்கு ஆன்லைன் மூலம் வாஸ்து ஆலோசனை பெற்றோம். சுவர்களை இடிக்காமல் செய்த பரிகாரங்களால் வீட்டில் இருந்த அமைதியின்மை நீங்கி தெய்வீக நிம்மதி நிலவுகிறது.”">
+            “We did an online consultation from the UK for our new home Vastu. Maharishi gave non-demolition remedies with crystal energy balancing. The heavy negative atmosphere completely transformed into pure divine peace.”
+          </p>
+          <div class="testi-author">
+            <div class="author-avatar">💎</div>
+            <div>
+              <div class="author-name">Anitha & Rajesh</div>
+              <div class="author-meta" data-en="London, UK • Vastu & Energy Balancing" data-ta="லண்டன், UK • வாஸ்து & ஆற்றல் சமநிலை">London, UK • Vastu & Energy Balancing</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divine Footer -->
+  <footer class="divine-footer">
+    <div class="footer-top container">
+      <div class="footer-col brand-col">
+        <div class="footer-logo">
+          <span class="om-large">🕉️</span>
+          <div>
+            <h3>MAHARISHI PARTHIBANGOVINDHARAJ</h3>
+            <p>BOGAR ASTROLOGY RESEARCH CENTRE, CHENNAI</p>
+          </div>
+        </div>
+        <p class="footer-blurb" data-en="Empowering seekers through authentic Vedic wisdom, sacred planetary alignments, and transformative life remedies under the grace of Lord Murugan & Siddhar Bogar." data-ta="முருகப் பெருமான் மற்றும் போகர் சித்தரின் பரிபூரண அருளோடு வேத ஜோதிடம், எண் கணிதம், ரத்தினவியல் மற்றும் வாஸ்து மூலம் உங்கள் வாழ்வை ஒளிரச் செய்கிறோம்.">
+          Empowering seekers through authentic Vedic wisdom, sacred planetary alignments, and transformative life remedies under the grace of Lord Murugan & Siddhar Bogar.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-en="Sacred Services" data-ta="தெய்வீக சேவைகள்">Sacred Services</h4>
+        <ul class="footer-links">
+          <li><a href="#services" data-en="Vedic Astrology & Janma Kundali" data-ta="வேத ஜோதிடம் & ஜாதகம்">Vedic Astrology & Janma Kundali</a></li>
+          <li><a href="#services" data-en="Marriage Porutham & Compatibility" data-ta="திருமணப் பொருத்தம்">Marriage Porutham & Compatibility</a></li>
+          <li><a href="#calculator" data-en="Name & Business Numerology" data-ta="எண் கணிதம் & பெயர் தேர்வு">Name & Business Numerology</a></li>
+          <li><a href="#services" data-en="Gemology & Navaratna Selection" data-ta="ரத்தினவியல் & நவரத்தினம்">Gemology & Navaratna Selection</a></li>
+          <li><a href="#services" data-en="Non-Demolition Vastu Shastra" data-ta="இடிக்காத வாஸ்து சாஸ்திரம்">Non-Demolition Vastu Shastra</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col contact-col">
+        <h4 data-en="Divine Contact" data-ta="தொடர்புக்கு">Divine Contact</h4>
+        <div class="contact-info-list">
+          <div class="c-item">
+            <i data-lucide="map-pin"></i>
+            <div>
+              <strong>Bogar Astrology Research Centre</strong>
+              <p>Chennai, Tamil Nadu, India</p>
+            </div>
+          </div>
+          <div class="c-item">
+            <i data-lucide="phone"></i>
+            <div>
+              <strong>Phone & WhatsApp</strong>
+              <p><a href="tel:+919698016673">+91 9698016673</a></p>
+            </div>
+          </div>
+          <div class="c-item">
+            <i data-lucide="globe"></i>
+            <div>
+              <strong>Consultation Modes & Languages</strong>
+              <p>Offline & Online (Tamil & English)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <div class="copyright">
+          © <span id="current-year">2026</span> Maharishi Parthibangovindharaj • Bogar Astrology Research Centre. All Rights Reserved.
+        </div>
+        <div class="mantra-footer">
+          லோகா சமஸ்தா சுகினோ பவந்து • May all beings everywhere be happy and free
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Quick Actions Bar -->
+  <aside class="floating-actions" aria-label="Quick contact links">
+    <a href="https://wa.me/919698016673?text=Namaste%20Maharishi%20Ji%2C%20I%20would%20like%20to%20consult%20regarding%20my%20Horoscope." target="_blank" rel="noopener noreferrer" class="float-btn float-wa" title="Chat on WhatsApp">
+      <i data-lucide="message-circle"></i>
+      <span class="float-tooltip">WhatsApp (+91 9698016673)</span>
+    </a>
+    <a href="tel:+919698016673" class="float-btn float-call" title="Call Maharishi Directly">
+      <i data-lucide="phone"></i>
+      <span class="float-tooltip">Direct Call</span>
+    </a>
+    <button id="scroll-top-btn" class="float-btn float-top" title="Scroll to Top">
+      <i data-lucide="arrow-up"></i>
+    </button>
+  </aside>
+
+  <!-- Modal Viewer for Consecrated Flyer / Certificate -->
+  <div class="flyer-modal" id="flyer-modal">
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="modal-content-box">
+      <button class="modal-close" id="modal-close-btn">&times;</button>
+      <div class="modal-body">
+        <img src="assets/maharishi-flyer.jpg" alt="Bogar Astrology Research Centre Pamphlet" class="modal-img">
+        <div class="modal-caption">
+          <h3>Maharishi Parthibangovindharaj M.A., M.Phil.</h3>
+          <p>Official Consecrated Invitation & Consultation Card • Bogar Astrology Research Centre, Chennai</p>
+          <a href="https://wa.me/919698016673?text=Namaste%20Maharishi%20Ji%2C%20I%20am%20viewing%20your%20official%20card%20and%20wish%20to%20consult." target="_blank" class="gold-pill-btn">
+            <i data-lucide="message-circle"></i> Connect on WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
